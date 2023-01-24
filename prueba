@@ -1,15 +1,13 @@
 const articulo = document.querySelector("#contenido")
-const button = document.querySelector("#leer-mas")
+const button = document.querySelector("#boton")
 
-button.addEventListener("click", leerMas)
+button.addEventListener("click", boton)
 
-function leerMas() {
+function mostrarMas() {
     if (articulo.classname ==="abierto") {
-        //leer menos
         articulo.classname = "";
         button.textContent = "Mostar mas"
     }    else {
-        //leer mas
         articulo.classname = "abierto";
         button.textContent = "mostrar menos"
     }
